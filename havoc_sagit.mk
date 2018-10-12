@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit some common Havoc stuff
 $(call inherit-product, vendor/havoc/config/common.mk)
 
+# Official HavocOS
+HAVOC_BUILD_TYPE := Official
+
 PRODUCT_NAME := havoc_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
