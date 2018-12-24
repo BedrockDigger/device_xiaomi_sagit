@@ -12,7 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/havoc/config/common.mk)
 
 # Official HavocOS
-HAVOC_BUILD_TYPE := Official
+HAVOC_BUILD_TYPE := Final
+
+# Maintainer Prop
+PRODUCT_PROPERTIES_OVERRIDES += \
+    ro.havoc.maintainer="ArianK16a"
 
 PRODUCT_NAME := havoc_sagit
 PRODUCT_DEVICE := sagit
